@@ -13,13 +13,76 @@
 background-color: rgb(253, 235, 212);
     padding: 10px;
 }
+.cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.1s;
+    background: black;
+    width: 20px;
+    height: 20px;
+    z-index: 999;
+}
+
+
+
+#time{
+    color: rgb(0, 0, 0);
+    margin-left: 8px;
+    font-family: "Tilt Warp", sans-serif;
+    font-size: 54px;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+font-variation-settings:
+"XROT" 0,
+"YROT" 0;
+align-items: center;
+justify-items: center;
+display: flex; 
+flex-direction: column;
+}
+
+#day {
+padding-top: 8px;
+font-family: "Tilt Warp", sans-serif;
+font-optical-sizing: auto;
+font-size: 18px;
+font-weight: 400;
+font-style: normal;
+font-variation-settings:
+"XROT" 0,
+"YROT" 0;
+display: flex; 
+flex-direction: column;
+align-items: center;
+justify-items: center;
+}
+
+#good {
+    font-family: "Tilt Warp", sans-serif;
+    font-size: 34px;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+    justify-content: center; 
+    align-items: center; 
+    display: flex; 
+    flex-direction: column;
+    padding-top: 28px;
+}
 
 .todo{
     width: 100%;
     max-width: 540px;
     background: #fff;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
+    margin: 55px auto 20px;
+    padding: 40px 30px 30px;
     border-radius: 10px;
 }
 
@@ -43,7 +106,7 @@ background-color: rgb(253, 235, 212);
     background: #edeef0;
     border-radius: 30px;
     padding-left: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 input {
@@ -68,6 +131,8 @@ background-color: rgb(255, 215, 163);
 
 ul li {
     list-style: none;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
     user-select: none;
@@ -112,4 +177,16 @@ ul li span{
 
 ul li span:hover{
     background: #edeef0;
+}
+
+.reset-btn {
+    content: '';
+    background-image: url(images/reset.png);
+    background-size: cover;
+    width: 72px;
+    height: 72px;
+    cursor: pointer;
+    position: absolute;
+    left: 22px;
+    bottom: 22px;
 }

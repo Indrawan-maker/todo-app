@@ -8,6 +8,14 @@
 </head>
 <body>
     <div class="container">
+        <div class="cursor"></div>
+        <div>
+            <h1 id="time">template jam waktu sistem</h1>
+            <h3 id="day">template hari</h3>
+        </div>
+                <div style="margin-bottom: 30px;">
+            <h2  id="good"  class="goodd"></h2>
+        </div>
         <div class="todo">
             <h2>Todo aps</h2>
             <div class="card">
@@ -17,8 +25,11 @@
             <ul id="liContainer">
                 
             </ul>
+            <div class="reset-btn" onclick="clearAll()">
+            </div>
         </div>
     </div>
     <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </body>
 </html>
