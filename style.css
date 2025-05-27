@@ -190,3 +190,10 @@ ul li span:hover{
     left: 22px;
     bottom: 22px;
 }
+
+hr {
+    margin-top: 228px;
+}
+p {
+    text-align: center;
+}
