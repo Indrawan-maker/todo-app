@@ -192,6 +192,9 @@ ul li span:hover{
 }
 
 p {
-    margin-top: 242px;
     text-align: center;
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
 }
