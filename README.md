@@ -2,5 +2,5 @@
 
 
 
-link web :
+you can try:
 https://todo-app-chi-ecru.vercel.app/
