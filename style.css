@@ -8,15 +8,15 @@
 }
 
 :root {
-    --primary-color:rgb(253, 235, 212);
-    --secondary-color: rgb(0, 0, 0);
-    --button-color:rgb(255, 215, 163);
+    --primary-color:#F5DBA3;
+    --secondary-color: black;
+    --button-color:#749F76;
 }
 
 .dark-theme {
-    --primary-color: rgb(0, 4, 48);
-    --secondary-color:   #F5F5DC;
-    --button-color:rgb(0, 7, 90);
+    --primary-color: #050b21;
+    --secondary-color:   #CCCDEF;
+    --button-color:#091723;
 
 }
 
