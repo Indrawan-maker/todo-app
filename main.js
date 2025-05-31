@@ -3,6 +3,17 @@ const liContainer = document.getElementById("liContainer")
 const time = document.getElementById("time")
 const good = document.getElementById("good")
 const input = document.getElementById("input")
+const icon = document.getElementById("icon")
+
+// darkmode
+icon.addEventListener('click', () => {
+    document.body.classList.toggle("dark-theme")
+    if(document.body.classList.contains("dark-theme")) {
+        icon.src = "images/sun.png"
+    } else {
+        icon.src = "images/moon.png"
+    }
+})
 
 // pengaturan cursor
 const cursor = document.querySelector('.cursor');

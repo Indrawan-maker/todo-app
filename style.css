@@ -7,11 +7,30 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color:rgb(253, 235, 212);
+    --secondary-color: rgb(0, 0, 0);
+}
+
+.dark-theme {
+    --primary-color: rgb(0, 2, 26);
+    --secondary-color:   #F5F5DC;
+
+}
+
 .container{
     width: 100%;
     height: 100vh;
-background-color: rgb(253, 235, 212);
+background-color: var(--primary-color);
     padding: 10px;
+}
+
+#icon {
+    width: 32px;
+    cursor: pointer;
+position: absolute;
+top: 12px;
+right: 20px;
 }
 .cursor {
     position: fixed;
@@ -20,7 +39,7 @@ background-color: rgb(253, 235, 212);
     border-radius: 50%;
     pointer-events: none;
     transition: transform 0.1s;
-    background: black;
+    background: var(--secondary-color);
     width: 20px;
     height: 20px;
     z-index: 999;
@@ -29,7 +48,7 @@ background-color: rgb(253, 235, 212);
 
 
 #time{
-    color: rgb(0, 0, 0);
+    color: var(--secondary-color);
     margin-left: 8px;
     font-family: "Tilt Warp", sans-serif;
     font-size: 54px;
@@ -46,6 +65,7 @@ flex-direction: column;
 }
 
 #day {
+        color: var(--secondary-color);
 padding-top: 8px;
 font-family: "Tilt Warp", sans-serif;
 font-optical-sizing: auto;
@@ -62,6 +82,7 @@ justify-items: center;
 }
 
 #good {
+        color: var(--secondary-color);
     font-family: "Tilt Warp", sans-serif;
     font-size: 34px;
 font-optical-sizing: auto;
@@ -88,7 +109,7 @@ font-variation-settings:
 
 
 .todo h2{
-    color: #002765;
+    color: midnightblue;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -116,6 +137,7 @@ input {
     background: transparent;
     padding: 10px;
     font-weight: 14px;
+        color: var(--secondary-color);
 }
 
 button{
@@ -183,12 +205,14 @@ ul li span:hover{
     content: '';
     background-image: url(images/reset.png);
     background-size: cover;
-    width: 72px;
-    height: 72px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     position: absolute;
     left: 22px;
     bottom: 22px;
+            border: none;
+    outline: none;
 }
 
 p {
@@ -197,4 +221,16 @@ p {
     bottom: 2px;
     width: 100%;
     left: 0;
+        color: var(--secondary-color);
+}
+
+@media (max-width: 600px) {
+button{
+    padding: 12px 25px;
+}
+
+.reset-btn {
+        width: 30px;
+    height: 30px;
+}
 }
