@@ -2,5 +2,5 @@
 
 
 
-you can try:
+take a look :
 https://todo-app-chi-ecru.vercel.app/
