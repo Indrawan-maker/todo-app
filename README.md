@@ -2,3 +2,11 @@
 
 take a look :
 https://todo-app-chi-ecru.vercel.app/
+
+lib : 
+https://gsap.com/
+https://sweetalert2.github.io/
+https://fontawesome.com/icons
+color rference :
+
+https://qovier.vercel.app/
