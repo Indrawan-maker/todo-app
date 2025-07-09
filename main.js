@@ -45,7 +45,7 @@ function animateCursor() {
 animateCursor();
 
 // pengaturan greeting
-const name = "kakak"
+const name = prompt("silahkan isi nama kakak") || "kakak"
 
 let currentDateTime = new Date();
 let currentHours = currentDateTime.getHours()
